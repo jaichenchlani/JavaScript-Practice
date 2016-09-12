@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>MathGarage.com</title>  
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+    </head>
+    <body>
+        <br/>
+        <div class="container">
+            <h2>Solve Math Problems with JavaScript</h2>
+            | <a href="http://mathgarage.com">MathGarage</a> | <a href="http://pluralsight.com">Pluralsight</a> | <a href="http://mathcode.net/template.txt">Template</a> | 
+            <hr>
+            <!-- html code here -->
+            <h3>Title</h3>
+            <input type="submit" id="submitButton" value=" Go"/>
+            <br/><br/>
+            <div id="details" ></div>
+        </div>
+
+        <script type=text/javascript>
+           "use strict";
+            $(document).ready(function () {
+                // function code goes here
+                $('#submitButton').click(function () {
+                    // Operators
+                    var a = 10.0;
+                    var b = 3.0;
+                    var c = 2.5;
+                    var sum = a+b;
+                    var subtract = a - b;
+                    var product = a * b;
+                    var div = a/b;
+                    var mod = a%b;
+                    var average = (a+b+c)/3;
+                    console.log("Sum:" + sum);
+                    console.log("Subtract:" + subtract);
+                    console.log("Product:" + product);
+                    console.log("Div:" + div);
+                    console.log("Mod:" + mod);
+                    console.log("Average:" + average);
+                    $('#details').html("See console for details.");                  
+                });
+            });
+        </script>
+
+    </body>
+</html>
